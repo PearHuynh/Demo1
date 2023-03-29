@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Demo1</title>
+    <style>
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            padding: 0px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        #div1 {
+            background-color: aquamarine;
+
+            padding-top: 0px;
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 50%;
+            border-radius: 30px;
+        }
+
+        button {
+            background-color: lightskyblue;
+            border-color: lightskyblue;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="div1">
+            <h2>Đọc ghi dữ liệu người dùng:</h2>
+            ID: <input id="find_people_id" type="text"><br><br>
+            <button id="btn_read_people">READ</button>
+            <p id="txt_name">Name: </p>
+            <p id="txt_age">Age: </p><br>
+
+            ID: <input id="people_id" type="text"><br><br>
+            Name: <input id="people_name" type="text"><br><br>
+            Age: <input id="people_age" type="text"><br><br>
+            <button id="btn_insert_people">INSERT</button>
+            <button id="btn_update_people">UPDATE</button>
+            <button id="btn_remove_people">REMOVE</button><br><br>
+
+            <hr>
+
+            <h2>Đọc cập nhật dữ liệu system:</h2>
+            Read value: <input id="system_read_id" type="text"><br><br>
+            <button id="btn_read_system">Read</button>
+            <p id="txt_value">value:</p><br>
+
+            <button id="btn_read_all_system">Read_All_number</button><br>
+            <p id="value1" style="display:inline">value1: </p>
+            <p id="value4" style="display:inline-block; padding-left: 50px;">value4: </p>
+            <p id="value7" style="display:inline-block; padding-left: 50px;">value7: </p>
+            <br>
+            <p id="value2" style="display:inline">value2:</p>
+            <p id="value5" style="display:inline-block; padding-left: 50px;">value5: </p>
+            <p id="value8" style="display:inline-block; padding-left: 50px;">value8: </p>
+            <br>
+            <p id="value3" style="display:inline">value3:</p>
+            <p id="value6" style="display:inline-block; padding-left: 50px;">value6: </p>
+            <p id="value9" style="display:inline-block; padding-left: 50px;">value9: </p>
+            <br><br>
+
+            Update value: <input id="system_id" type="text"><br><br>
+            Value: <input id="system_value" type="text"><br><br>
+            <button id="btn_insert_system">INSERT</button>
+            <button id="btn_update_system">UPDATE</button>
+            <button id="btn_remove_system">REMOVE</button><br><br>
+
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
